@@ -1,0 +1,147 @@
+[
+  {
+    "ContainingType": "RendaVariavelApi.Controllers.FundosImobiliariosController",
+    "Method": "GetAllFundosImobiliarios",
+    "RelativePath": "api/v1/FundosImobiliarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RendaVariavelApi.Models.FundoImobiliario, RendaVariavelApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RendaVariavelApi.Controllers.FundosImobiliariosController",
+    "Method": "Add",
+    "RelativePath": "api/v1/FundosImobiliarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fundoImobiliario",
+        "Type": "RendaVariavelApi.Models.FundoImobiliario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RendaVariavelApi.Models.FundoImobiliario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RendaVariavelApi.Controllers.FundosImobiliariosController",
+    "Method": "GetByTicker",
+    "RelativePath": "api/v1/FundosImobiliarios/{ticker}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticker",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RendaVariavelApi.Controllers.FundosImobiliariosController",
+    "Method": "Upadate",
+    "RelativePath": "api/v1/FundosImobiliarios/{ticker}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fundoImobiliario",
+        "Type": "RendaVariavelApi.Models.FundoImobiliario",
+        "IsRequired": true
+      },
+      {
+        "Name": "ticker",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RendaVariavelApi.Models.FundoImobiliario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RendaVariavelApi.Controllers.FundosImobiliariosController",
+    "Method": "Delete",
+    "RelativePath": "api/v1/FundosImobiliarios/{ticker}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ticker",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RendaVariavelApi.Models.FundoImobiliario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RendaVariavelApi.Controllers.FundosImobiliariosController",
+    "Method": "AddBulkCopy",
+    "RelativePath": "api/v1/FundosImobiliarios/BulkCopy",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fundosImobiliarios",
+        "Type": "System.Collections.Generic.List\u00601[[RendaVariavelApi.Models.FundoImobiliario, RendaVariavelApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RendaVariavelApi.Models.FundoImobiliario",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
